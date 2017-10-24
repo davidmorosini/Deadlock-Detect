@@ -1,0 +1,138 @@
+\hypertarget{main_8cpp}{}\section{Referência do Arquivo C\+:/\+Users/david/\+Desktop/\+Trabalho S\+O/final/main.cpp}
+\label{main_8cpp}\index{C\+:/\+Users/david/\+Desktop/\+Trabalho S\+O/final/main.\+cpp@{C\+:/\+Users/david/\+Desktop/\+Trabalho S\+O/final/main.\+cpp}}
+{\ttfamily \#include \char`\"{}globais.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}parser.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}deadlock.\+cpp\char`\"{}}\newline
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_a3940237aa676b70cbb0e7e3b3d95d413}{imprime\+\_\+comando} (\hyperlink{globais_8h_a64e5f15415f41c3c1fcc9dad6a3d1ed5}{comando} c)
+\begin{DoxyCompactList}\small\item\em Função imprimir um comando na saida padrão (P, V, IF, E\+L\+SE) \end{DoxyCompactList}\item 
+\hyperlink{globais_8h_a15fcba6ac1df7611be8b80db7e5d21e8}{leitor} $\ast$ \hyperlink{main_8cpp_a4c59c4ed821e6d049a566235bf3f5a20}{ini\+Leitor} (void)
+\begin{DoxyCompactList}\small\item\em Função que inicializa o leitor. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{globais_8h_a15fcba6ac1df7611be8b80db7e5d21e8}{leitor} $>$ \hyperlink{main_8cpp_a1fc2a94fab9a4c0868c76df202b1078e}{ini\+Vet\+Leitor} (int qtd)
+\begin{DoxyCompactList}\small\item\em Funcao de inicializacao do vetor de leitores. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_a2a67465fe4e395be3c19aa7d1fca3f03}{procura\+Else} (vector$<$ \hyperlink{globais_8h_a64e5f15415f41c3c1fcc9dad6a3d1ed5}{comando} $>$ v, int index, int qtd\+Tabs)
+\begin{DoxyCompactList}\small\item\em Funcao que varre o vetor de comandos a partir de uma determinada posicao do E\+L\+SE em determinada tabulacao. \end{DoxyCompactList}\item 
+bool \hyperlink{main_8cpp_a53383314fcdab4b08e10ade5f1e5ad7c}{le\+Comandos} (\hyperlink{globais_8h_a34a6fc0651e50f50247b389bb1816477}{data} d)
+\begin{DoxyCompactList}\small\item\em Funcao principal que le os comandos da estrutura de dados e testa varias combinacoes. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Funções}
+\mbox{\Hypertarget{main_8cpp_a3940237aa676b70cbb0e7e3b3d95d413}\label{main_8cpp_a3940237aa676b70cbb0e7e3b3d95d413}} 
+\index{main.\+cpp@{main.\+cpp}!imprime\+\_\+comando@{imprime\+\_\+comando}}
+\index{imprime\+\_\+comando@{imprime\+\_\+comando}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{imprime\+\_\+comando()}{imprime\_comando()}}
+{\footnotesize\ttfamily void imprime\+\_\+comando (\begin{DoxyParamCaption}\item[{\hyperlink{globais_8h_a64e5f15415f41c3c1fcc9dad6a3d1ed5}{comando}}]{c }\end{DoxyParamCaption})}
+
+
+
+Função imprimir um comando na saida padrão (P, V, IF, E\+L\+SE) 
+
+Arquivo com funções relacionadas ao parser da entrada para as estruturas de dados do programa.
+
+\begin{DoxyDate}{Data}
+05.\+07.\+2017 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autores}
+Caio Vianna, David Morosini
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parâmetros}
+{\em comando} & c\+: estrutura de dados Comando \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+void, apenas imprime os comandos e não retirna nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a4c59c4ed821e6d049a566235bf3f5a20}\label{main_8cpp_a4c59c4ed821e6d049a566235bf3f5a20}} 
+\index{main.\+cpp@{main.\+cpp}!ini\+Leitor@{ini\+Leitor}}
+\index{ini\+Leitor@{ini\+Leitor}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{ini\+Leitor()}{iniLeitor()}}
+{\footnotesize\ttfamily \hyperlink{globais_8h_a15fcba6ac1df7611be8b80db7e5d21e8}{leitor}$\ast$ ini\+Leitor (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Função que inicializa o leitor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+leitor $\ast$\+: Um ponteiro para a estrutura de dados \hyperlink{struct_leitor}{Leitor} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a1fc2a94fab9a4c0868c76df202b1078e}\label{main_8cpp_a1fc2a94fab9a4c0868c76df202b1078e}} 
+\index{main.\+cpp@{main.\+cpp}!ini\+Vet\+Leitor@{ini\+Vet\+Leitor}}
+\index{ini\+Vet\+Leitor@{ini\+Vet\+Leitor}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{ini\+Vet\+Leitor()}{iniVetLeitor()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{globais_8h_a15fcba6ac1df7611be8b80db7e5d21e8}{leitor}$>$ ini\+Vet\+Leitor (\begin{DoxyParamCaption}\item[{int}]{qtd }\end{DoxyParamCaption})}
+
+
+
+Funcao de inicializacao do vetor de leitores. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em int} & qtd\+: tamanho do vector criado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+vector$<$leitor$>$\+: vector da estrutura de dados \hyperlink{struct_leitor}{Leitor} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a53383314fcdab4b08e10ade5f1e5ad7c}\label{main_8cpp_a53383314fcdab4b08e10ade5f1e5ad7c}} 
+\index{main.\+cpp@{main.\+cpp}!le\+Comandos@{le\+Comandos}}
+\index{le\+Comandos@{le\+Comandos}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{le\+Comandos()}{leComandos()}}
+{\footnotesize\ttfamily bool le\+Comandos (\begin{DoxyParamCaption}\item[{\hyperlink{globais_8h_a34a6fc0651e50f50247b389bb1816477}{data}}]{d }\end{DoxyParamCaption})}
+
+
+
+Funcao principal que le os comandos da estrutura de dados e testa varias combinacoes. 
+
+Vetor contendo uma pilha para cada thread do vetor de threads
+
+Percorre os vector para empilhar os processos
+
+Verifica
+
+Quando a funcao esta em modo desempilha
+
+Desempilha ate encontrar um comando IF
+
+Se tem IF procura o E\+L\+SE
+
+Verifica se a pilha ja acabou, incrementando o termina em caso positivo
+
+Verifica se nao esta ignorando E\+L\+S\+ES
+
+A intenção é fazer um while enquanto a função de deadlock der false ou acabar o vetor de comandos \mbox{\Hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a2a67465fe4e395be3c19aa7d1fca3f03}\label{main_8cpp_a2a67465fe4e395be3c19aa7d1fca3f03}} 
+\index{main.\+cpp@{main.\+cpp}!procura\+Else@{procura\+Else}}
+\index{procura\+Else@{procura\+Else}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{procura\+Else()}{procuraElse()}}
+{\footnotesize\ttfamily int procura\+Else (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{globais_8h_a64e5f15415f41c3c1fcc9dad6a3d1ed5}{comando} $>$}]{v,  }\item[{int}]{index,  }\item[{int}]{qtd\+Tabs }\end{DoxyParamCaption})}
+
+
+
+Funcao que varre o vetor de comandos a partir de uma determinada posicao do E\+L\+SE em determinada tabulacao. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em ivector$<$comando$>$} & v\+: vector da estrutura de dados Comando \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+int index 
+
+int qtd\+Tabs 
+\end{DoxyReturn}
+Verifica se e um comando else e se este e o correto pela tabulacao 

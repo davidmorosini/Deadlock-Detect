@@ -11,8 +11,8 @@
 #define _THREAD "thread"
 #define _IF "if"
 #define _ELSE "else"
-#define _P "P"
-#define _V "V"
+#define _P "p"
+#define _V "v"
 #define SEPARADOR_FULL " \t"
 #define SEPARADOR_TAB '\t'
 #define TAM_MAX 200
@@ -33,27 +33,27 @@ typedef enum{EMPILHA, DESEMPILHA}acao;
 typedef struct Thread thread;
 typedef struct Comandos comando;
 typedef struct Data data;
+typedef struct Ponto pt;
+typedef struct Leitor leitor;
 
-//thread
-
-typedef struct leitor{
+struct Leitor{
 	acao a;
 	int index;
 	int flagV;
 	vector<comando> * comandos;
-}leitor;
+};
 
 struct Comandos{
-	char condicao[20];
+	char condicao[TAM_MAX];
 	tipo comando;
-	//esse valor vai fazer sentido dependendo do comando
+	/** Quantidade de tabulações de cada comando*/
 	unsigned int tabs;
-	//semaforo
+	/** Qual o semaforo usado (operações P e V)*/
 	unsigned char valor;
 };
 
 struct Thread{
-	char nome[20];
+	char nome[TAM_MAX];
 	unsigned int last_index;
 	vector<comando> comandos;
 };
@@ -61,6 +61,10 @@ struct Thread{
 struct Data{
 	vector<thread> threads;
 	vector<int> sem;
+};
+
+struct Ponto{
+	int x, y;
 };
 
 #endif

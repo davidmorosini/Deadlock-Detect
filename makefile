@@ -1,2 +1,2 @@
 all:
-	g++ mainPilhaLeitura.cpp -o mainPilhaLeitura
+	g++ main.cpp -o main
